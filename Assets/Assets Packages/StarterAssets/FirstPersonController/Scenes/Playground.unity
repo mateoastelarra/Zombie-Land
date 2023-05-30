@@ -888,6 +888,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fpCamera: {fileID: 1274694529}
   range: 100
+  damage: 25
 --- !u!1 &1764214107
 GameObject:
   m_ObjectHideFlags: 0
@@ -1675,16 +1676,6 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 135756641613574979}
-    - target: {fileID: 5664307905477441799, guid: 41ca4ec7db194b148bb2dc3a4225e3ba,
-        type: 3}
-      propertyPath: chaseRange
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5664307905477441799, guid: 41ca4ec7db194b148bb2dc3a4225e3ba,
-        type: 3}
-      propertyPath: attackingDistance
-      value: 1.2
-      objectReference: {fileID: 0}
     - target: {fileID: 5664307905477441848, guid: 41ca4ec7db194b148bb2dc3a4225e3ba,
         type: 3}
       propertyPath: m_RootOrder
@@ -1739,11 +1730,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5664307905477441852, guid: 41ca4ec7db194b148bb2dc3a4225e3ba,
-        type: 3}
-      propertyPath: m_StoppingDistance
-      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 5664307905477441853, guid: 41ca4ec7db194b148bb2dc3a4225e3ba,
         type: 3}
