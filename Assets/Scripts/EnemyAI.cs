@@ -64,6 +64,7 @@ public class EnemyAI : MonoBehaviour
 
     public void OnDamageTaken()
     {
+        Debug.Log("Teveo");
         isProvoked = true;
     }
 
