@@ -452,8 +452,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75c5e9142203aca4bbcb6914b5f2b5ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  virtualCameraContainer: {fileID: 690765643}
-  zoomKey: 32
+  virtualCamera: {fileID: 690765644}
+  zoomKey: 308
+  zoomInValue: 25
+  zoomOutValue: 40
+  player: {fileID: 1552879037}
+  sensibilityZoomIn: 0.5
+  sensibilityZoomOut: 1
 --- !u!1001 &475513228
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -800,12 +805,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9eb847ab97b24024588682c8601254cf, type: 3}
---- !u!1 &690765643 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8762286023885395077, guid: 9c489a8547f4d9e4387da15a4ff82c81,
+--- !u!114 &690765644 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8762286023885395323, guid: 9c489a8547f4d9e4387da15a4ff82c81,
     type: 3}
   m_PrefabInstance: {fileID: 7288094137546172433}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &730429555
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3052,6 +3063,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1551121510}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1552879037 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8616685848737228372, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
+    type: 3}
+  m_PrefabInstance: {fileID: 5393215579111688471}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1601283164
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3807,7 +3824,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 5393215579111688471}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1552879037}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
@@ -4152,7 +4169,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 5393215579111688471}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1552879037}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e087ecce43ebbff45a1b360637807d93, type: 3}

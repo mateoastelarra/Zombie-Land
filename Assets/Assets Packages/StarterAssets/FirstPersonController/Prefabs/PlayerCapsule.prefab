@@ -294,6 +294,7 @@ GameObject:
   - component: {fileID: 8616685848737228376}
   - component: {fileID: 135756641613574983}
   - component: {fileID: 135756641613574984}
+  - component: {fileID: 5341410816707548491}
   m_Layer: 8
   m_Name: PlayerCapsule
   m_TagString: Player
@@ -526,6 +527,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverCanvas: {fileID: 0}
+--- !u!114 &5341410816707548491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8616685848737228372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1fc687ca229ed74da831c6bb897ea9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ammoAmount: 10
 --- !u!1001 &6042356453105357019
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -786,3 +800,4 @@ MonoBehaviour:
   muzzleFlash: {fileID: 2039230687337246548}
   hitEffect: {fileID: 2306677438589043996, guid: 432adaa759bfa15438a2eaea2e2ad82e,
     type: 3}
+  ammoSlot: {fileID: 5341410816707548491}
