@@ -10,7 +10,6 @@ public class EnemyHealth : MonoBehaviour
     {
         BroadcastMessage("OnDamageTaken");
         hitpoints -= damage;
-        Debug.Log("ouch");
         if (hitpoints <=0)
         {
             Destroy(gameObject);

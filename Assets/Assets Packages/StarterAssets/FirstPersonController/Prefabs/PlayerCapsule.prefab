@@ -124,6 +124,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3769773709019410919}
+  - component: {fileID: 315223359}
   m_Layer: 0
   m_Name: Weapons
   m_TagString: Untagged
@@ -148,6 +149,25 @@ Transform:
   m_Father: {fileID: 4135013735270702856}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -2.846, y: 0, z: 0}
+--- !u!114 &315223359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1529338920825418785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75c5e9142203aca4bbcb6914b5f2b5ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  virtualCamera: {fileID: 0}
+  zoomKey: 308
+  zoomInValue: 25
+  zoomOutValue: 40
+  player: {fileID: 8616685848737228372}
+  sensibilityZoomIn: 0.5
+  sensibilityZoomOut: 1
 --- !u!1 &4135013735270702863
 GameObject:
   m_ObjectHideFlags: 0
@@ -764,12 +784,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
---- !u!198 &2039230687337246548 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 5734787321701449615, guid: ada2587319194f542957a8c2ae277cb9,
-    type: 3}
-  m_PrefabInstance: {fileID: 6042356453105357019}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8337350101993265021 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2337074158996965286, guid: ada2587319194f542957a8c2ae277cb9,
@@ -797,7 +811,7 @@ MonoBehaviour:
   fpCamera: {fileID: 0}
   range: 100
   damage: 25
-  muzzleFlash: {fileID: 2039230687337246548}
+  muzzleFlash: {fileID: 0}
   hitEffect: {fileID: 2306677438589043996, guid: 432adaa759bfa15438a2eaea2e2ad82e,
     type: 3}
   ammoSlot: {fileID: 5341410816707548491}
