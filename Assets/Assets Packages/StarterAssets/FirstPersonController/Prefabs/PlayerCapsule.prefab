@@ -31,7 +31,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3769773709019410919}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!108 &293958655
 Light:
@@ -124,7 +124,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3769773709019410919}
-  - component: {fileID: 315223359}
   m_Layer: 0
   m_Name: Weapons
   m_TagString: Untagged
@@ -144,32 +143,13 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 6575740876266131427}
+  - {fileID: 2446527499372147376}
   - {fileID: 8337350101993265021}
   - {fileID: 293958653}
-  - {fileID: 2446527499372147376}
-  - {fileID: 6575740876266131427}
   m_Father: {fileID: 4135013735270702856}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -2.846, y: 0, z: 0}
---- !u!114 &315223359
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1529338920825418785}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75c5e9142203aca4bbcb6914b5f2b5ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  virtualCamera: {fileID: 6225640760722257021}
-  zoomKey: 308
-  zoomInValue: 25
-  zoomOutValue: 40
-  player: {fileID: 8616685848737228372}
-  sensibilityZoomIn: 0.5
-  sensibilityZoomOut: 1
 --- !u!1 &4135013735270702863
 GameObject:
   m_ObjectHideFlags: 0
@@ -581,19 +561,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 493592, guid: f9430978bd2bb6049a6bfb3cd528f158, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 493592, guid: f9430978bd2bb6049a6bfb3cd528f158, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.0390352
+      value: -0.047
       objectReference: {fileID: 0}
     - target: {fileID: 493592, guid: f9430978bd2bb6049a6bfb3cd528f158, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.015
+      value: -0.062
       objectReference: {fileID: 0}
     - target: {fileID: 493592, guid: f9430978bd2bb6049a6bfb3cd528f158, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.527
+      value: -0.53
       objectReference: {fileID: 0}
     - target: {fileID: 493592, guid: f9430978bd2bb6049a6bfb3cd528f158, type: 3}
       propertyPath: m_LocalRotation.w
@@ -758,7 +738,7 @@ PrefabInstance:
     - target: {fileID: 1786759125029253417, guid: 24293e33d3322f84bb98b6c032ce2dc9,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1786759125029253417, guid: 24293e33d3322f84bb98b6c032ce2dc9,
         type: 3}
@@ -885,6 +865,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9005220659476430821, guid: 2d3a85ecde41a8246a79669975912b74,
+        type: 3}
+      propertyPath: near clip plane
+      value: 0.07
+      objectReference: {fileID: 0}
     - target: {fileID: 9005220659476430823, guid: 2d3a85ecde41a8246a79669975912b74,
         type: 3}
       propertyPath: m_Name
@@ -914,7 +899,7 @@ PrefabInstance:
     - target: {fileID: 2337074158996965286, guid: ada2587319194f542957a8c2ae277cb9,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2337074158996965286, guid: ada2587319194f542957a8c2ae277cb9,
         type: 3}
@@ -1149,3 +1134,28 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 6042356453105357019}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &8337350101993753437 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2337074158997199750, guid: ada2587319194f542957a8c2ae277cb9,
+    type: 3}
+  m_PrefabInstance: {fileID: 6042356453105357019}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4738455453278268740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8337350101993753437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75c5e9142203aca4bbcb6914b5f2b5ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  virtualCamera: {fileID: 6225640760722257021}
+  zoomKey: 308
+  zoomInValue: 25
+  zoomOutValue: 40
+  player: {fileID: 8616685848737228372}
+  sensibilityZoomIn: 0.5
+  sensibilityZoomOut: 1
