@@ -547,7 +547,7 @@ MonoBehaviour:
   - {fileID: 84919050}
   - {fileID: 2096787413}
   changeWeaponKey: 122
-  changingWeaponRate: 0.1
+  changingWeaponRate: 0.2
 --- !u!1 &542508511
 GameObject:
   m_ObjectHideFlags: 0
