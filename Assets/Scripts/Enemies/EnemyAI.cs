@@ -12,14 +12,22 @@ public class EnemyAI : MonoBehaviour
     NavMeshAgent navMeshAgent;
     private float distanceToTarget = Mathf.Infinity;
     private bool isProvoked = false;
+    EnemyHealth enemyHealth;
 
     private void Start() 
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
+        enemyHealth = GetComponent<EnemyHealth>();
     }
 
     private void Update() 
     {
+        if (enemyHealth.IsDead())
+        {
+            navMeshAgent.enabled = false;
+            enabled = false;
+            return;
+        }
         if (target == null) return;
         distanceToTarget = Vector3.Distance(target.position, transform.position);
 
@@ -73,4 +81,8 @@ public class EnemyAI : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, chaseRange);
     }
 
+    public void StopMoving()
+    {
+        navMeshAgent.isStopped = true;
+    }
 }
