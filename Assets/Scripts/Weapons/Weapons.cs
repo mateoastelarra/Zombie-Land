@@ -20,6 +20,11 @@ public class Weapons : MonoBehaviour
             StartCoroutine(nameof(Shoot));
     }
 
+    private void OnEnable()
+    {
+        canShoot = true;
+    }
+
     private IEnumerator Shoot()
     {
         if (ammoSlot.GetCurrentAmount() > 0)
