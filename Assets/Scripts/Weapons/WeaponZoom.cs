@@ -21,19 +21,34 @@ public class WeaponZoom : MonoBehaviour
     {
         playerController = player.GetComponent<FirstPersonController>();
     }
+
+    private void OnDisable() 
+    {
+        ZoomOut();    
+    }
     
 
     private void Update() 
     {
         if (Input.GetKey(zoomKey))
         {
-            virtualCamera.m_Lens.FieldOfView = zoomInValue;
-            playerController.RotationSpeed = sensibilityZoomIn;
+            ZoomIn();
         }
         if (Input.GetKeyUp(zoomKey))
         {
-            virtualCamera.m_Lens.FieldOfView = zoomOutValue;
-            playerController.RotationSpeed = sensibilityZoomOut;
-        }        
+            ZoomOut();
+        }
+    }
+
+    private void ZoomOut()
+    {
+        virtualCamera.m_Lens.FieldOfView = zoomOutValue;
+        playerController.RotationSpeed = sensibilityZoomOut;
+    }
+
+    private void ZoomIn()
+    {
+        virtualCamera.m_Lens.FieldOfView = zoomInValue;
+        playerController.RotationSpeed = sensibilityZoomIn;
     }
 }

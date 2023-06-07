@@ -29,7 +29,6 @@ public class WeaponSwitcher : MonoBehaviour
         changingWeapon = true;
         weapons[currentWeapon].SetActive(false);
         currentWeapon = (currentWeapon + 1 + 2 * downward - downward * (weapons.Length)) % (weapons.Length);
-        Debug.Log(currentWeapon);
         yield return new WaitForSeconds(changingWeaponRate);
         weapons[currentWeapon].SetActive(true);
         changingWeapon = false;
