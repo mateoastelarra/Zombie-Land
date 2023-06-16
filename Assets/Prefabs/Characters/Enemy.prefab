@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04f30f83be9cbf54bbb092d317c4f762, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  target: {fileID: 8723641200717596473, guid: a9373f8e3d7d03f4ebcd499308c98da1, type: 3}
   chaseRange: 8
   turnSpeed: 5
 --- !u!114 &6533777122680390274
